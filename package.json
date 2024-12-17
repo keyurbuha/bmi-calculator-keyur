@@ -1,16 +1,24 @@
 {
-  "name": "bmi-calculator-keyur",
-  "version": "1.0.0",
-  "description": "A simple package to calculate BMI (Body Mass Index) and provide classification.",
+  "name": "@keyur/bmi-calc",
+  "version": "1.0.1",
+  "description": "BMI calculator and health report generator",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": ["BMI", "health", "fitness", "calculator", "body mass index"],
+  "keywords": [
+    "bmi",
+    "calculator",
+    "health"
+  ],
   "author": "Keyur Buha",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/bmi-calculator-keyur"
-  }
+    "url": "git+https://github.com/keyurbuha/bmi-calculator-keyur.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keyurbuha/bmi-calculator-keyur/issues"
+  },
+  "homepage": "https://github.com/keyurbuha/bmi-calculator-keyur#readme"
 }
