@@ -1,46 +1,70 @@
-@keyurbuha/bmi-calc
+## @keyurbuha/bmi-calc
 A comprehensive Node.js package for calculating Body Mass Index (BMI) and generating detailed health insights.
-🌟 Features
+## 🌟 Features
 
-Precise BMI Calculation: Calculate Body Mass Index accurately
-Comprehensive Health Classification:
+**Precise BMI Calculation:** Calculate Body Mass Index accurately
 
-Categorize BMI results (Underweight, Normal weight, Overweight, Obesity)
+**Comprehensive Health Classification:** Categorize BMI results (Underweight, Normal weight, Overweight, Obesity)
 
-
-Metabolic Insights:
-
-Calculate Basal Metabolic Rate (BMR)
+**Metabolic Insights:** Calculate Basal Metabolic Rate (BMR)
 Determine personalized daily calorie requirements
 
-
-Weight Management Support:
-
-Suggest ideal weight ranges
+**Weight Management Support:** Suggest ideal weight ranges
 Provide personalized health risk assessments
 
+**Lifestyle Recommendations:** Generate tailored health and fitness suggestions
 
-Lifestyle Recommendations: Generate tailored health and fitness suggestions
-
-📦 Installation
+## 📦 Installation
 Install the package using your preferred package manager:
-npm
-bashCopynpm install @keyurbuha/bmi-calc
-Yarn
-bashCopyyarn add @keyurbuha/bmi-calc
-pnpm
-bashCopypnpm add @keyurbuha/bmi-calc
-🚀 Usage
-Basic Example
-javascriptCopyconst { calculateHealthReport } = require('@keyurbuha/bmi-calc');
+### npm
+`npm install @keyurbuha/bmi-calc`
+### Yarn
+`yarn add @keyurbuha/bmi-calc`
+### pnpm
+`pnpm add @keyurbuha/bmi-calc`
+
+## 🚀 Usage
+### Basic Example
+
+```javascript
+const { calculateHealthReport } = require('@keyurbuha/bmi-calc');
 
 // Calculate health report
 const report = calculateHealthReport(70, 175, 30, 'male', 'moderate');
 console.log(report);
-Input Parameters
-ParameterTypeDescriptionValid ValuesweightnumberWeight in kilogramsPositive numberheightCmnumberHeight in centimetersPositive numberagenumberUser's agePositive numbergenderstringUser's gender"male" or "female"activityLevelstringPhysical activity level"sedentary", "light", "moderate", or "active"
-Example Output
-jsonCopy{
+```
+
+### Input Parameters
+The following are the parameters required for the BMI calculation:
+
+- **`weight`**:  
+  - **Type**: number  
+  - **Description**: Weight in kilograms  
+  - **Valid Values**: Positive number
+
+- **`heightCm`**:  
+  - **Type**: number  
+  - **Description**: Height in centimeters  
+  - **Valid Values**: Positive number
+
+- **`age`**:  
+  - **Type**: number  
+  - **Description**: User's age  
+  - **Valid Values**: Positive number
+
+- **`gender`**:  
+  - **Type**: string  
+  - **Description**: User's gender  
+  - **Valid Values**: `"male"`, `"female"`
+
+- **`activityLevel`**:  
+  - **Type**: string  
+  - **Description**: Physical activity level  
+  - **Valid Values**: `"sedentary"`, `"light"`, `"moderate"`, `"active"`
+
+
+### Example Output
+```json{
   "bmi": 22.86,
   "classification": "Normal weight",
   "bmr": 1668.75,
@@ -49,24 +73,29 @@ jsonCopy{
   "healthRisk": "Low risk",
   "recommendation": "Maintain a balanced diet and regular exercise."
 }
-📋 API Reference
-calculateHealthReport(weight, heightCm, age, gender, activityLevel)
-Returns a comprehensive health report with:
+```
+## 📋 API Reference
 
-bmi: Calculated Body Mass Index
-classification: BMI category
-bmr: Basal Metabolic Rate
-dailyCalorieRequirement: Recommended daily calorie intake
-idealWeightRange: Suggested weight range
-healthRisk: Potential health risks
-recommendation: Personalized lifestyle suggestions
+### `calculateHealthReport(weight, heightCm, age, gender, activityLevel)`
 
-🧪 Testing
-To run tests:
-bashCopy# Clone the repository
+This function returns a comprehensive health report with the following details:
+
+- **bmi**: Calculated Body Mass Index
+- **classification**: BMI category (e.g., Underweight, Normal weight, Overweight, Obesity)
+- **bmr**: Basal Metabolic Rate (the number of calories the body needs at rest)
+- **dailyCalorieRequirement**: Recommended daily calorie intake based on activity level
+- **idealWeightRange**: Suggested weight range for the given height
+- **healthRisk**: Potential health risks based on BMI and other factors
+- **recommendation**: Personalized lifestyle suggestions for improving health
+
+## 🧪 Testing
+To run tests, follow these steps:
+
+```bash
+# Clone the repository
 git clone https://github.com/keyurbuha/bmi-calculator-keyur.git
 
-# Navigate to project directory
+# Navigate to the project directory
 cd bmi-calculator-keyur
 
 # Install dependencies
@@ -74,28 +103,34 @@ npm install
 
 # Run tests
 npm test
-🤝 Contributing
+```
+## 🤝 Contributing
+
 Contributions are welcome! Please follow these steps:
 
-Fork the repository
-Create a new branch (git checkout -b feature/your-feature)
-Commit your changes (git commit -am 'Add some feature')
-Push to the branch (git push origin feature/your-feature)
-Create a new Pull Request
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Create a new Pull Request
 
-📄 License
+## 📄 License
+
 This project is licensed under the MIT License.
-🏷️ Keywords
 
-bmi
-health
-fitness
-calculator
-weight-management
+## 🏷️ Keywords
 
-👤 Author
-Keyur Buha
-🔗 Links
+- bmi
+- health
+- fitness
+- calculator
+- weight-management
 
-Repository: GitHub Repository
-Issues: Report Issues
+## 👤 Author
+
+**Keyur Buha**
+
+## 🔗 Links
+
+- **Repository**: [GitHub Repository](https://github.com/keyurbuha/bmi-calculator-keyur)
+- **Issues**: [Report Issues](https://github.com/keyurbuha/bmi-calculator-keyur/issues)
