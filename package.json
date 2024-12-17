@@ -1,6 +1,6 @@
 {
-  "name": "@keyur/bmi-calc",
-  "version": "1.0.1",
+  "name": "@keyurbuha/bmi-calc",
+  "version": "1.0.4",
   "description": "BMI calculator and health report generator",
   "main": "index.js",
   "scripts": {
